@@ -1,0 +1,22 @@
+Dodaæ tabele z jakimiœ informacjami do bazy firma, ustal i ustaw relacje miêdzy nia a inn¹ tabel¹ z tej bazy
+wype³nij ta tabele przyk³adowymi 3 rekordami
+
+create table zespoly(
+Id_zespolu char(5) not null primary key,
+Nazwa_zespolu char(30) not null,
+Liczba_pracownikow int not null,
+Team_lider varchar(50) not null
+);
+
+insert into zespoly values
+("IT","Information Technology",12,"Leszek Dobrosielski"),
+("EESH","Energy Environment Safety Health",15,"Dawid ¯ó³towski"),
+("QC","Quality Control",10,"Tobiasz Rybczyñski");
+
+alter table pracownicy add zespol char(5) not null references zespoly (Id_zespolu);
+
+update pracownicy set zespol="QC" where pesel_p="59111102012";
+update pracownicy set zespol="QC" where pesel_p="68111102012";
+update pracownicy set zespol="EESH" where pesel_p="68111202042";
+update pracownicy set zespol="EESH" where pesel_p="69101102052";
+update pracownicy set zespol="IT" where pesel_p="67091104012";

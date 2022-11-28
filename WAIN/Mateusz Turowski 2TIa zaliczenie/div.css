@@ -1,0 +1,68 @@
+body
+{}
+#container
+{
+        width:1000px;
+        margin-left: auto;
+        margin-right: auto;
+        height:500px;
+
+}
+#gora
+{
+        width:80px;
+	float: left;
+	background-color:#008000;
+	height:40px;
+}
+#bokbialy
+{
+        width:1000px;
+        height:40px;
+        background-color:#ffffff;
+
+}
+#pod
+{ 
+        width:80px;
+        height:140px;
+        background-color:#ffffff;
+        float: left;
+}
+#napis
+{
+        width: 1000px;
+        height: 100px;
+        background-color: #008000;
+        font-size:40px;
+	color: white;
+	text-align: center;
+        padding-bottom:20px;
+	padding-top:20px;
+}
+#prawydolny
+{
+	width: 80px;
+	height: 480px;
+	background-color: #008000;
+	float:left;
+}
+#lewydolny
+{
+        width:1000px;
+        height:250px;
+        background-color:#ffffff;
+}
+#napis2
+{
+	width:1000px;
+	height:35px;
+	background-color:#008000;
+	
+	font-size:15px;
+	color: white;
+	text-align: center;
+	padding-top:10px;
+	
+	padding-bottom:10px;
+}

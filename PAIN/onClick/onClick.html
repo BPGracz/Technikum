@@ -1,0 +1,32 @@
+<html>
+<head>
+</head>
+<body>
+<img src="zdjęcie1.png" Id="zdjecie" onclick="obrazki()"/>
+<script>
+
+var tablica = new Array('zdjęcie1.png','zdjęcie2.png','zdjęcie3.png');
+var cyfra = 0;
+function obrazki()
+{
+	switch (cyfra) 
+	{
+	case 0:
+	document.getElementById("zdjecie").src=tablica[1];
+	cyfra += 1
+	break;
+	
+	case 1:
+	document.getElementById("zdjecie").src=tablica[2];
+	cyfra += 2
+	break;
+	
+	case 2:
+	document.getElementById("zdjecie").src=tablica[0];
+	cyfra -= 2
+	break;
+	}
+}
+</script>
+</body>
+</html>
