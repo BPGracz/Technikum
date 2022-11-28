@@ -1,0 +1,45 @@
+1. Policz ile jest samochodów o zadanej marce.
+
+select marka, count(nr_rej) as ilosc from samochody_sl group by marka;
+
+2. Wypisz pracowników, którzy urodzili siê w listopadzie i posortuj malej¹co po imieniu.
+
+select imie, nazwisko from pracownicy where month(data_urodzenia)=11 order by imie desc;
+
+3. Wypisz dane samochodu o najm³odszym roczniku.
+
+select marka, model, rok_produkcji from samochody_sl order by rok_produkcji desc limit 1;
+
+4. Zmieñ miejscowoœæ pracownika o peselu 67091104012 na Kraków.
+
+update pracownicy set miejscowosc='Kraków' where pesel_p='67091104012';
+
+5. Dodaj do tabeli pracownicy pole zainteresowania.
+
+alter table pracownicy add zainteresowania varchar(20) null;
+
+6. Wype³nij pole zainteresowania wartoœci¹ sport gdzie to pole jest puste.
+
+update pracownicy set zainteresowania='sport' where null;
+
+7. Wypisz numer telefonu oraz razem imiê i nazwisko pracownika.
+
+select concat(imie," ",nazwisko) as dane, nr_telefonu from pracownicy inner join telefony on pracownicy.pesel_p=telefony.wlasciciel;
+
+8. Utwórz u¿ytkownika radek z has³em 54321. Nadaj mu uprawnienia do modyfikowania tabeli pracownicy.
+
+create user 'radek'@'localhost' identified by '54321';
+grant update on frima.pracownicy to 'radek'@'localhost';
+
+9. Usuñ wczeœniej nadane prawa.
+
+revoke update on frima.pracownicy from 'radek'@'localhost';
+
+10. Usuñ u¿ytkownika z serwera
+
+drop user 'radek'@'localhost';
+
+11.Wyœwietl nazwisko imie data urodzenia pracownika i markê pojazdu którym jeŸdzi
+
+
+select  imie, nazwisko, data_urodzenia, marka from (pracownicy inner join pracownicy_sam on pracownicy.pesel_p=pracownicy_sam.wlasciciel) inner join samochody_sl on samochody_sl.nr_rej=pracownicu_sam.nr_rej;

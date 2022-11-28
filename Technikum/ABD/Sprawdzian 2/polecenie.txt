@@ -1,0 +1,1 @@
+Napisz skrypt panstwa.sql za pomoca ktorego utworzysz baze panstwa skladajaca sie z tabel: panstwa, klimat, ustroje. Zaprojektuj tabele , utwórz relacje miedzy tabelami i wprowadz do kazdej tabeli po 5 rekordow

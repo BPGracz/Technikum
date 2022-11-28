@@ -1,0 +1,7 @@
+formularz z polem kombi
+formularz z podformularzem
+przygotwac dwa raporty 
+1.1 pole grupowania
+2.2 polami grupowania
+startowy (zakoñcz prace, rozpocznij prace)
+po wciœnieciu otwiera sie okno "Witamy w bazie szkola"
