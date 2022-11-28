@@ -1,7 +1,7 @@
 # Technikum
 Materiały i prace z czasów mojej edukacji w technikum informatycznym.
 =======
-ABD - Administracja Bazami Danych__
-PAIN - Pisanie Aplikacji Internetowych__
-SBD - Systemy Baz Danych__
+ABD - Administracja Bazami Danych <br />
+PAIN - Pisanie Aplikacji Internetowych <br />
+SBD - Systemy Baz Danych <br />
 WAIN - Witryny i Aplikacje Internetowe
